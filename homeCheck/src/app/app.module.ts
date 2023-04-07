@@ -11,13 +11,13 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider'
 import { ImoveisModule } from './imoveis/imoveis.module';
-import { ImoveisComponent } from "./imoveis/imoveis/ImoveisComponent";
 import { AtualizarDashboardComponent } from './imoveis/imoveis/pages/atualizar-dashboard/atualizar-dashboard.component';
 import { CadastrarImovelComponent } from './imoveis/imoveis/pages/cadastrar-imovel/cadastrar-imovel.component';
 import { EditarPerfilComponent } from './imoveis/imoveis/pages/editar-perfil/editar-perfil.component';
 import { MatCardModule } from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -37,10 +37,11 @@ import {MatMenuModule} from '@angular/material/menu';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
-    ImoveisModule,
     MatCardModule,
     MatGridListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatListModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

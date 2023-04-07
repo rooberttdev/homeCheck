@@ -1,4 +1,6 @@
+import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { Component } from '@angular/core';
+import { Observable, map, shareReplay } from 'rxjs';
 
 @Component({
   selector: 'app-atualizar-dashboard',
@@ -7,7 +9,14 @@ import { Component } from '@angular/core';
 })
 export class AtualizarDashboardComponent {
  
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+    .pipe(
+      map(result => result.matches),
+      shareReplay()
+    );
 
-  constructor() {}
+  constructor(private breakpointObserver: BreakpointObserver) {}
+
+
 }
 

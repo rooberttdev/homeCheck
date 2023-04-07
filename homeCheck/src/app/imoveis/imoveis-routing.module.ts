@@ -4,6 +4,7 @@ import { AtualizarDashboardComponent } from './imoveis/pages/atualizar-dashboard
 import { CadastrarImovelComponent } from './imoveis/pages/cadastrar-imovel/cadastrar-imovel.component';
 import { EditarPerfilComponent } from './imoveis/pages/editar-perfil/editar-perfil.component';
 import { ImoveisComponent } from './imoveis/ImoveisComponent';
+import { ListaImoveisComponent } from './lista-imoveis/lista-imoveis.component';
 
 
 const routes: Routes = [
@@ -13,7 +14,7 @@ const routes: Routes = [
    },
   {
     path:'imoveis',
-    component:ImoveisComponent
+    component:ListaImoveisComponent
     },
     {
       path:'editar-perfil',

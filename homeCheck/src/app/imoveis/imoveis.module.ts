@@ -9,12 +9,15 @@ import { HomeComponent } from './imoveis/pages/home/home.component';
 import { ListaImoveisComponent } from './lista-imoveis/lista-imoveis.component';
 import { ImoveisComponent } from './imoveis/ImoveisComponent';
 import {MatCardModule} from '@angular/material/card';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
     HomeComponent,
     ListaImoveisComponent,
-    ImoveisComponent
+    ImoveisComponent,
    ],
   imports: [
     CommonModule,
@@ -23,7 +26,10 @@ import {MatCardModule} from '@angular/material/card';
     MatIconModule,
     MatSidenavModule,
     MatDividerModule,
-    MatCardModule
+    MatCardModule,
+    LayoutModule,
+    MatButtonModule,
+    MatListModule,
 
   ]
 })
