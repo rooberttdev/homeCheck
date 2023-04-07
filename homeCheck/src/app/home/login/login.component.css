@@ -1,0 +1,23 @@
+.title-login{
+    margin: center;
+    margin-top: 80px;
+    font-weight: 900;
+    font-size: 30px;
+}
+.formulario{
+    padding-top: 30px;
+}
+
+.form-group{
+    padding: 10px;
+} 
+.btn{
+    margin-top: 5px;
+    
+}
+.cadastro{
+    margin-left: 1px;
+    margin-top: 15px;
+    font-size: 20px;
+    
+}

@@ -1,0 +1,109 @@
+mat-toolbar{
+    background-color:#004a9f ;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 3;
+ 
+}
+.logo-header{
+    width: 120px;
+}
+.header-button{
+    background: transparent;
+    border: none;
+    color: white;
+}
+.header {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+
+
+}
+.button-title{
+    font-size: 18px;
+    font-weight:500;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    
+
+}
+mat-sidenav{
+    margin: 16px;
+    width: 200px;
+    border-right: none;
+    background: #002bc5;
+    color: white;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+}
+
+.content {
+    height: calc(100vh - 98px);
+    margin: 16px;
+    margin-left: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: lightgray;
+    border-radius: 10px ;
+}
+
+
+mat-sidenav-container{
+    height: calc(100vh - 65px);
+}
+.menu-button{
+    padding: 5px;
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+mat-icon{
+    margin-right: 8px;
+    align-items: center;
+    color: white;
+    
+}
+
+.avatar{
+    margin-top: 16px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name{
+    margin: 0;
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+.designation{
+    margin-top: 2px;
+    font-size: 0.7em;
+    color: lightgray;
+}
+mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }

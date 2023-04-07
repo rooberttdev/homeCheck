@@ -1,0 +1,128 @@
+<mat-toolbar class="mat-elevation-z8">
+  <button
+    mat-icon-button
+    *ngIf="sidenav.mode === 'over'"
+    (click)="sidenav.toggle()"
+    class="header-button"
+  >
+    <mat-icon *ngIf="!sidenav.opened" class="button-menu"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened" class="button-close"> close </mat-icon>
+  </button> 
+  <div class="header">
+    <div><img src="assets/img/logo4.png" alt="logo" class="logo-header" > HOME CHECK IMÓVEIS</div> 
+  </div>
+  <div>
+    <button class="button-title">
+      <a [routerLink]="['']" class="link">Sair</a>
+    </button>
+  </div>
+
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+
+      <img
+      class="avatar mat-elevation-z8"
+      src="assets/img/robert-barbosa.png"/>
+
+      <h4 class="name">Robert Barbosa</h4>
+      <p class="designation">Corretor CRECI - 9971-1</p>
+
+    <mat-divider></mat-divider>
+
+
+     <button mat-button class="menu-button">
+      <mat-icon>home</mat-icon>
+      <span><a [routerLink]="['home']" class="link">Home</a></span>
+     </button>
+
+     <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span><a [routerLink]="['editar-perfil']" class="link">Perfil</a></span>
+      
+     </button>
+     <button mat-button class="menu-button">
+      <mat-icon>add</mat-icon>
+      <span><a [routerLink]="['cadastrar-imovel']" class="link">Cadastrar</a></span>
+     </button>
+
+     <mat-divider></mat-divider>
+
+     <button mat-button class="menu-button">
+      <mat-icon>dashboard</mat-icon>
+      <span><a [routerLink]="['dashboard']" class="link">Dashboard</a></span>
+     </button>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <h4 id="atualizar-perfil">Atualizar Perfil</h4>
+    <div class="container">
+    <form class="formulario">
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <label class="form-label" for="form6Example1" >Primeiro nome</label>
+            <input type="text" id="form6Example1" class="form-control" required />
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="form-outline">
+            <label class="form-label" for="form6Example2" >Sobrenome</label>
+            <input type="text" id="form6Example2" class="form-control" required/>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <label class="form-label" for="form6Example1" >E-mail</label>
+            <input type="email" id="form6Example1" class="form-control" required />
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <label class="form-label" for="form6Example2">Telefone</label>
+            <input type="text" id="form6Example2" class="form-control" required/>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <label class="form-label" for="form6Example1">Usuário</label>
+            <input type="text" id="form6Example1" class="form-control" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <label class="form-label" for="form6Example2">Senha</label>
+            <input type="password" id="form6Example2" class="form-control" />
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <label class="form-label" for="form6Example1">CRECI</label>
+            <input type="text" id="form6Example1" class="form-control" required/>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <label class="form-label" for="customFile">Foto de Perfil</label>
+            <input type="file" class="form-control" id="customFile" required />
+          </div>
+        </div>
+      </div>
+    
+      
+
+      <button type="submit" class="btn btn-primary btn-block mb-4" (click)="onEdit" >Atualizar</button>
+    </form>
+  </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,220 @@
+<mat-toolbar class="mat-elevation-z8">
+  <button
+    mat-icon-button
+    *ngIf="sidenav.mode === 'over'"
+    (click)="sidenav.toggle()"
+    class="header-button"
+  >
+    <mat-icon *ngIf="!sidenav.opened" class="button-menu"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened" class="button-close"> close </mat-icon>
+  </button> 
+  <div class="header">
+    <div><img src="assets/img/logo4.png" alt="logo" class="logo-header" > HOME CHECK IMÓVEIS</div> 
+  </div>
+  <div>
+    <button class="button-title">
+      <a [routerLink]="['']" class="link">Sair</a>
+    </button>
+  </div>
+
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+
+      <img
+      class="avatar mat-elevation-z8"
+      src="assets/img/robert-barbosa.png"/>
+
+      <h4 class="name">Robert Barbosa</h4>
+      <p class="designation">Corretor CRECI - 9971-1</p>
+
+    <mat-divider></mat-divider>
+
+
+     <button mat-button class="menu-button">
+      <mat-icon>home</mat-icon>
+      <span><a [routerLink]="['imoveis']" class="link">Home</a></span>
+     </button>
+
+     <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span><a [routerLink]="['editar-perfil']" class="link">Perfil</a></span>
+      
+     </button>
+     <button mat-button class="menu-button">
+      <mat-icon>add</mat-icon>
+      <span><a [routerLink]="['cadastrar-imovel']" class="link">Cadastrar</a></span>
+     </button>
+
+     <mat-divider></mat-divider>
+
+     <button mat-button class="menu-button">
+      <mat-icon>dashboard</mat-icon>
+      <span><a [routerLink]="['dashboard']" class="link">Dashboard</a></span>
+     </button>
+
+  </mat-sidenav>
+  <mat-sidenav-content class="container">
+    <div><h3 class="title-main">Imóveis em estoque</h3></div>
+    
+      <div class="main-container">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="assets/img/casa4.jpeg" alt="Casa em condomínio fechado">
+                  <div class="card-body">
+                    <h5 class="card-title">Casa em condomínio fechado</h5>
+                    <p class="card-text">R$ 350.000,00</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">4 quartos e 3 banheiros </li>
+                    <li class="list-group-item">2 vaga na garagem</li>
+                    <li class="list-group-item">Piscina e área para churrasqueira</li>
+                  </ul>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="assets/img/casa2.jpg" alt="Casa em condomínio fechado">
+                  <div class="card-body">
+                    <h5 class="card-title">Casa em condomínio fechado</h5>
+                    <p class="card-text">R$ 150.000,00</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">3 quartos e 2 banheiros sendo 1 suíte</li>
+                    <li class="list-group-item">2 vaga na garagem</li>
+                    <li class="list-group-item">Área para churrasqueira</li>
+                  </ul>
+                </div>
+            
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="assets/img/casa5.jpg" alt="Casa em condomínio fechado">
+                  <div class="card-body">
+                    <h5 class="card-title">Casa em condomínio fechado</h5>
+                    <p class="card-text">R$ 800.000,00</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">5 quartos e 3 banheiros sendo 1 suíte</li>
+                    <li class="list-group-item">3 vaga na garagem</li>
+                    <li class="list-group-item">Piscina e área para churrasqueira</li>
+                  </ul>
+                </div>
+            
+            
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="assets/img/aluguel3.jpg" alt="Casa em condomínio fechado">
+                  <div class="card-body">
+                    <h5 class="card-title">Apartamento em condomínio </h5>
+                    <p class="card-text">R$ 1.700.000,00</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">2 quartos e 1 banheiro</li>
+                    <li class="list-group-item">1 vaga na garagem</li>
+                    <li class="list-group-item">Energia + Condomínio</li>
+                </ul>
+              </div>
+
+              
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="assets/img/ap4.jpg" alt="Casa em condomínio fechado">
+                <div class="card-body">
+                  <h5 class="card-title">Apartamento em condomínio fechado</h5>
+                  <p class="card-text">R$ 250.000,00</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">3 quartos e 1 banheiro</li>
+                  <li class="list-group-item">1 vaga na garagem</li>
+                  <li class="list-group-item">Piscina, quadra e churrasqueira </li>
+                </ul>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="assets/img/ap3.jpg" alt="Casa em condomínio fechado">
+                <div class="card-body">
+                  <h5 class="card-title">Apartamento em condomínio fechado</h5>
+                  <p class="card-text">R$ 180.000,00</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">2 quartos e 1 banheiro</li>
+                  <li class="list-group-item">1 vaga na garagem</li>
+                  <li class="list-group-item">Piscina, quadra e churrasqueira </li>
+                </ul>
+              </div>
+            
+            
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="assets/img/aluguel2.jpg" alt="Casa em condomínio fechado">
+                <div class="card-body">
+                  <h5 class="card-title">Aluguel de casa em condomínio fechado</h5>
+                  <p class="card-text">R$ 1.500,00</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">4 quartos e 2 banheiros</li>
+                  <li class="list-group-item">Energia + Condomínio</li>
+                  <li class="list-group-item">Garagem</li>
+                </ul>
+              </div>
+
+          
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="assets/img/aluguel1.jpg" alt="Casa em condomínio fechado">
+                <div class="card-body">
+                  <h5 class="card-title">Aluguel de casa em rua pública</h5>
+                  <p class="card-text">R$ 1.000,00 mensal</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">3 quartos e 1 banheiro</li>
+                  <li class="list-group-item">Energia + Água</li>
+                  <li class="list-group-item">Garagem</li>
+                </ul>
+              </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/img/casa3.jpg" alt="Casa em condomínio fechado">
+                    <div class="card-body">
+                      <h5 class="card-title">Casa em condomínio fechado</h5>
+                      <p class="card-text">R$ 1.700.000,00</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">6 quartos e 4 banheiros sendo 2 suítes</li>
+                      <li class="list-group-item">3 vaga na garagem</li>
+                      <li class="list-group-item">Energia + Condomínio</li>
+                  </ul>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="assets/img/casa6.jpg" alt="Casa em condomínio fechado">
+                  <div class="card-body">
+                    <h5 class="card-title"> Casa em rua pública</h5>
+                    <p class="card-text">R$ 140.000,00</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">3 quartos e 1 banheiro</li>
+                    <li class="list-group-item">Energia + Água</li>
+                    <li class="list-group-item">Garagem</li>
+                </ul>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/img/casa7.jpg" alt="Casa em condomínio fechado">
+                    <div class="card-body">
+                      <h5 class="card-title">Casa em rua pública</h5>
+                      <p class="card-text">R$ 350.000,00</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">3 quartos e 2 banheiros</li>
+                      <li class="list-group-item">Área para churrasqueira</li>
+                      <li class="list-group-item">Garagem</li>
+                  </ul>
+                  </div>
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="assets/img/casa8.jpg" alt="Casa em condomínio fechado">
+                  <div class="card-body">
+                    <h5 class="card-title">Casa em condomínio fechado</h5>
+                    <p class="card-text">R$ 1.900.000,00</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">5 quartos e 3 banheiros sendo 1 suíte</li>
+                    <li class="list-group-item">3 vaga na garagem</li>
+                    <li class="list-group-item">Piscina, quadra e churrasqueira</li>
+                </ul>
+              </div>
+        
+      </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
