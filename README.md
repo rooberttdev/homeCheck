@@ -1,19 +1,19 @@
 <h1 align="center">Home Check Imoveis</h1>
-<p align="center">Uma aplicação feito para gestão de corretores</p>
+<p>Uma aplicação feito para gestão de corretores.</p>
 
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Angular](https://angular.io//)
+- [Angular](https://angular.io/).
 - [Node.js](https://nodejs.org/en/)
 - [JS](https://www.javascript.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 ## Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e [Angular](https://angular.io/).
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
 
 ## 🎲 Rodando o Back End (servidor)
 
