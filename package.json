@@ -2,5 +2,8 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "@angular/cli": "^15.2.5"
   }
 }
